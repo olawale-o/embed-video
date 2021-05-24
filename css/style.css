@@ -6,6 +6,8 @@
     --logo-color: #000;
     --input-color-outline-focus: #89b5ee;
     --auth-btn-color: #065fd4;
+    --light-divider-color: #dbdbdb;
+    --dark-divider-color:#3c3c3c;
 }
 *{
     padding: 0;
@@ -31,6 +33,11 @@ img{
 }
 i{
     font-size: 3rem;
+}
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
 }
 input:focus{
     outline-color: var(--input-color-outline-focus);
@@ -111,4 +118,61 @@ input:focus{
 }
 .auth-text{
     font-size: 1.5rem;
+}
+.main-container{
+    padding: 2rem 10rem;
+}
+.content{
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-column-gap: 2rem;
+}
+
+.left__content{
+   width: 100%;
+}
+.left__content-top{
+    width: 100%;
+}
+
+.left__content-top .top{
+    margin-bottom: 2rem;
+}
+.video-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.left__content-top .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--light-divider-color);
+}
+
+.views__date{
+    font-weight: 300;
+    display: flex;
+    height: auto;
+    align-items:flex-start;
+}
+.views__date > span {
+    font-size: 1.5rem;
+}
+.dot{
+    margin: 0 0.45rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.externals{
+    display: flex;
+}
+.mr {
+    margin-right: 2rem;
+}
+.externals .btn{
+    display: inline-flex;
+    align-items: center;
 }
