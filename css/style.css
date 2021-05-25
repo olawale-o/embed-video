@@ -8,6 +8,7 @@
     --auth-btn-color: #065fd4;
     --light-divider-color: #dbdbdb;
     --dark-divider-color:#3c3c3c;
+    --youtube-btn: #cc0000;
 }
 *{
     padding: 0;
@@ -102,6 +103,11 @@ input:focus{
 .search-btn{
     padding: 0.25rem 2.5rem;
 }
+.subscribe-btn{
+    background-color: var(--youtube-btn);
+    color: #fff;
+    padding: 0 1.5rem;
+}
 .search-btn i {
     font-size: 1.8rem;
     border-radius: 0;
@@ -175,4 +181,90 @@ input:focus{
 .externals .btn{
     display: inline-flex;
     align-items: center;
+}
+.externals i {
+    color: #534d4d;
+}
+.left__content-description{
+    display: flex;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--light-divider-color);
+    align-items: flex-start;
+}
+
+.creator_logo{
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+
+}
+.creator_logo img{
+    border-radius: inherit;
+    display: inline;
+}
+.description__content{
+    padding: 0 1.5rem;
+}
+.description__content .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+.creator__name{
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+.creator__name i{
+    font-size: 1.35rem;    
+}
+.subscribers{
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+.desc__summary{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #534d4d;
+}
+.comments__stats{
+    padding: 2.5rem 0;
+    font-size: 1.8rem;
+    color: #534d4d;
+}
+.comments_count{
+    margin-right: 2rem;
+}
+.sort-btn{
+    color: #534d4d;
+}
+.sort-btn i{
+    color: #534d4d;
+    font-size: 1.8rem;
+}
+.comment__form{
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    grid-column-gap: 2rem;
+}
+.user__avatar{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.user__avatar img{
+    border-radius: inherit;
+    display: inline;
+}
+.comment__form input{
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #534d4d;
+    background-color: inherit;
+    font-size: 1.5rem;
 }
